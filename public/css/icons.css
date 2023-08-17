@@ -1,0 +1,35 @@
+.material-symbols-outlined {
+    color: black;
+    margin: 12px;
+    cursor: pointer;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 200,
+  'opsz' 48,
+}
+
+.menu-controller,
+.close-menu,
+.menu-controller
+{
+  margin: 0 22px 0 0;
+  color: rgb(10, 10, 9);
+}
+
+.menu-controller {
+    top: 8px;
+    right: 0px;
+    position: fixed;
+}
+
+.close-menu{
+  right: 0;
+  position: absolute;
+}
+
+.return-home{
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+}

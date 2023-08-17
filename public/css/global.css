@@ -1,0 +1,34 @@
+.horizontal-flex{
+    width: 100%;
+    display: flex;    
+    flex-direction: row;
+}
+
+.vertical-flex{
+    width: 100%;
+    display: flex;    
+    flex-direction: column;
+}
+
+
+.center{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.space-b-center{
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.center-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertical-dir{
+    flex-direction: column;
+}
