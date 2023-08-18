@@ -1,7 +1,10 @@
 export default class Server {
     constructor() {
-        this.name = 'Diego';
+        this.name = 'server one';
+        this.searchData = ['colgantes', 'cama para gato', ' cuadros', 'repisas'];
+        this.Instance();
     }
-    getData() {
+    Instance() {
+        globalThis.server = this;
     }
 }

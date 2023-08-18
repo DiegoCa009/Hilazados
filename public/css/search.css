@@ -1,4 +1,5 @@
 #search-product-ui{
+    visibility: hidden;
     top: 0;
     position: absolute;
     width: 100%;

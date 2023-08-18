@@ -1,20 +1,15 @@
 import SearchTemplate from "../views/search.js";
 
 export default class Search {
-    private service: any;
+    private $searchElement: HTMLElement = document.querySelector('.search')!;
     private template: SearchTemplate;
-    private name: string = 'DIEGO';
-    public constructor(service: any){
-        this.service = service;
+    public constructor(){
         this.template = new SearchTemplate();
     }
 
     public createListener (element: HTMLElement){
-        element.addEventListener('click',async(e: Event) =>{
-            const target = e.target as HTMLElement
-            const template = await this.template.getTemplate()
-            document.body.innerHTML += template
+       this.$searchElement.addEventListener('click', (e: Event)=>{
             
-        } )
+       })
     }
 }
