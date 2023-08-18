@@ -1,10 +1,9 @@
+import createHTML from "../templates/search";
 export default class SearchTemplate {
     constructor() {
-        this.path = './templates/search.html';
+        this.searchData = [];
     }
-    async getTemplate() {
-        const response = await fetch(this.path);
-        const template = await response.text();
-        return template;
+    draw() {
+        createHTML('search-tag');
     }
 }
