@@ -4,7 +4,7 @@ class MyCustomButton extends HTMLElement {
         this.searchData = globalThis.server.searchData;
         const shadowRoot = this.attachShadow({ mode: 'open' });
         const button = document.createElement('button');
-        button.textContent = 'Click Me';
+        button.textContent = window.server.name;
         const style = document.createElement('style');
         style.textContent = `
         button {
@@ -19,7 +19,7 @@ class MyCustomButton extends HTMLElement {
         shadowRoot.appendChild(button);
     }
 }
-const createTemplate = (name) => {
+const searchTemplate = (name) => {
     customElements.define(name, MyCustomButton);
 };
-export default createTemplate;
+export default searchTemplate;

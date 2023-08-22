@@ -1,11 +1,12 @@
  class MyCustomButton extends HTMLElement {
-    private searchData: string[];
+    private searchData: any;
     constructor() {
         super();
         this.searchData = globalThis.server.searchData;
         const shadowRoot = this.attachShadow({ mode: 'open' });
         const button = document.createElement('button');
-        button.textContent = 'Click Me';
+        button.textContent = window.server.name;
+        
   
       const style = document.createElement('style');
       style.textContent = `
@@ -25,11 +26,11 @@
   }
   
   
-  const createTemplate = (name: string): void =>{
+  const searchTemplate = (name: string): void =>{
       customElements.define(name, MyCustomButton);
   }
 
-  export default createTemplate
+  export default searchTemplate
 
   
   
